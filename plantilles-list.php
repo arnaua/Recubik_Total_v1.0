@@ -38,7 +38,7 @@
                         <div class="product-status-wrap">
                             <h4>Listado de Plantillas</h4>
                             <div class="add-product">
-                                <a href="#">Añadir Plantillas</a>
+                                <a href="#">Añadir Plantilla</a>
                             </div>
                             <div class="asset-inner">
                                 <table>
