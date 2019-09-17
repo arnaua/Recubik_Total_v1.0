@@ -72,7 +72,7 @@
 	<div class="error-pagewrap">
 		<div class="error-page-int">
 			<div class="text-center m-b-md custom-login">
-				<h3>RECUBIK CARTELERÍA DIGITAL prova</h3>
+				<h3>RECUBIK CARTELERÍA DIGITAL</h3>
 				<p></p>
 			</div>
             <?php
