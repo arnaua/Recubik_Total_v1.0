@@ -1,0 +1,52 @@
+RewriteEngine on
+
+ErrorDocument 404	/index.php?page=9
+
+RewriteRule ^$                                                                  index.php
+
+RewriteRule ^inici$                                                          	index.php
+RewriteRule ^inicio$                                                          	index.php
+RewriteRule ^home$                                                          	index.php
+
+RewriteRule ^llista_plantilles$                                                	plantilles-list.php
+RewriteRule ^lista_plantillas$                                                	plantilles-list.php
+RewriteRule ^list_templates$                                                	plantilles-list.php
+
+RewriteRule ^configuració$                                                		configuracion.php
+RewriteRule ^configuración$                                                		configuracion.php
+RewriteRule ^settings$                                                			configuracion.php
+
+RewriteRule ^login$                                                          	login.php
+RewriteRule ^0x0001$                                                          	0x0001.html
+
+RewriteRule ^logout$                                                          	logout.php
+
+
+
+
+
+
+
+
+RewriteRule ^404$                                                               index.php?page=9
+
+RewriteRule ^users$                                                          	users.php
+RewriteRule ^change-password$                                                	cambiar_contrasena.php
+RewriteRule ^newuser$                                                       	newuser.php
+RewriteRule ^allstudents$                                               		students.php
+RewriteRule ^new-student$                                                  		editstudent.php
+RewriteRule ^edit-student$                                                  	editstudent.php
+RewriteRule ^fandema$                                                			fandemastudent.php
+RewriteRule ^reports$                                                			reports.php
+RewriteRule ^reports-menu$                                                		reports_menu.php
+RewriteRule ^fandema-active-students-list$                                     	pdf/fandema/fandema_active_students_list.php
+RewriteRule ^fandema-inactive-students-list$                                    pdf/fandema/fandema_inactive_students_list.php
+RewriteRule ^fandema-all-students-list$                                     	pdf/fandema/fandema_all_students_list.php
+RewriteRule ^student-report$                                                	pdf/fandema/student_report.php
+RewriteRule ^showroom$                                    			            index.php
+RewriteRule ^descargas$                                    			            index.php
+
+RewriteCond  %{QUERY_STRING}  ^(.*)$
+RewriteRule ^productos/(.+)-([0-9]+)$                          					index.php?page=31&cat=$2&%1
+
+RewriteRule ^formulario_enviado$                                        		index.php?page=35
